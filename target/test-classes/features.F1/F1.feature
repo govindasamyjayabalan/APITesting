@@ -8,11 +8,10 @@ Feature:F1 race
     And I enter the country name
 
   Scenario: Number of circuits in 2018
-    Given Get to the home page of 2018 circuit
+    Given circuit service endpoint
+    And Get to the home page of 2018 circuit
     And I check the number of circuits is 21
 
-
-    
 
 
 

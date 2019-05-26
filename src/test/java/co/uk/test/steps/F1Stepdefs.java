@@ -7,38 +7,25 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.springframework.stereotype.Component;
 
 import javax.xml.bind.JAXBException;
+import javax.xml.stream.Location;
 
-import static io.restassured.RestAssured.given;
+import static io.restassured.RestAssured.*;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.hasSize;
-import static org.hamcrest.Matchers.is;
+import static org.hamcrest.Matchers.*;
 
 public class F1Stepdefs {
     private WebDriver driver;
     private Response response;
 
 
+
     @Given("^Details of the circuit$")
     public void goToTheLandingPage() {
         getDriverManager();
-        driver.get("http://ergast.com/api/f1/2017/circuits.json");
+        driver.get("http://ergast.com/api/f1/2018/circuits.json");
 
-    }
-
-    @And("^I enter the circuit id$")
-    public void iEnterTheCircutiId() {
-    }
-
-    @And("^I enter the circuit name$")
-    public void iEnterTheCircuitName() {
-
-    }
-
-    @And("^I enter the country name$")
-    public void iEnterTheCountryName() {
     }
 
     public void getDriverManager() {
@@ -47,10 +34,6 @@ public class F1Stepdefs {
         driver = new ChromeDriver();
     }
 
-    @And("^I go to the home page$")
-    public void iGoToTheHomePage() {
-
-    }
 
 
     //------
@@ -68,10 +51,6 @@ public class F1Stepdefs {
                 when().
                 get(endpoint).
                 thenReturn();
-//                then().
-//
-//                assertThat().
-//                body("MRData.CircuitTable.Circuits.circuitId",hasSize(20));
 
     }
 
@@ -82,4 +61,41 @@ public class F1Stepdefs {
         assertThat("Checking number of circuits", jsonArray.length(), is(numberOfCircuits));
 
     }
+
+    @And("^I enter the circuit id (.*)$")
+    public void iEnterTheCircuitId(String  arg0) {
+
+    }
+   @And("^I enter the circuit name(.*)$")
+    public void iPassTheCircuitIdToFindLocation(String circuitId) {
+
+       given().
+               pathParam("circuitId",circuitId).
+               when().
+               get("http://ergast.com/api/f1/circuits/{circuitId}.json").
+               then().
+               assertThat().
+               body("MRData.CircuitTable.Circuits.Location[0].country",equalTo("Australia" ));
+    }
+
+    @And("^I check the the location is valid$")
+    public void iCheckTheTheLocationIsValid() {
+        String season = "2017";
+        response=given().
+                pathParam("raceSeason",season).
+         when().
+        get("http://ergast.com/api/f1/{raceSeason}/circuits.json").thenReturn();
+        JSONObject jsonObj = new JSONObject(response.getBody().prettyPrint());
+        String  jasonObj = jsonObj.getJSONObject("MRData").getJSONObject("CircuitTable").getString("season");
+        assertThat(jasonObj, is("2017"));
+
+       // JSONArray jsonArray = jsonObj.getJSONObject("MRData").getJSONObject("CircuitTable").getJSONArray(season);
+           //
+
+
+    }
+
+
+
+
 }

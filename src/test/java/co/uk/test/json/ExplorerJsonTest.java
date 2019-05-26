@@ -28,7 +28,7 @@ public class ExplorerJsonTest {
                 "          \"Location\": {\n" +
                 "            \"country\": \"Australia\",\n" +
                 "            \"locality\": \"Melbourne\",\n" +
-                "            \"lat\": \"-37.8497\",\n" +
+                "            \"lat\": \"37\",\n" +
                 "            \"long\": \"144.968\"\n" +
                 "          }\n" +
                 "        },\n" +
@@ -39,7 +39,7 @@ public class ExplorerJsonTest {
                 "          \"Location\": {\n" +
                 "            \"country\": \"USA\",\n" +
                 "            \"locality\": \"Austin\",\n" +
-                "            \"lat\": \"30.1328\",\n" +
+                "            \"lat\": \"30\",\n" +
                 "            \"long\": \"-97.6411\"\n" +
                 "          }\n" +
                 "        },\n" +
@@ -50,7 +50,7 @@ public class ExplorerJsonTest {
                 "          \"Location\": {\n" +
                 "            \"country\": \"Bahrain\",\n" +
                 "            \"locality\": \"Sakhir\",\n" +
-                "            \"lat\": \"26.0325\",\n" +
+                "            \"lat\": \"26\",\n" +
                 "            \"long\": \"50.5106\"\n" +
                 "          }\n" +
                 "        },\n" +
@@ -72,7 +72,7 @@ public class ExplorerJsonTest {
                 "          \"Location\": {\n" +
                 "            \"country\": \"Spain\",\n" +
                 "            \"locality\": \"Montmeló\",\n" +
-                "            \"lat\": \"41.57\",\n" +
+                "            \"lat\": \"41\",\n" +
                 "            \"long\": \"2.26111\"\n" +
                 "          }\n" +
                 "        },\n" +
@@ -83,7 +83,7 @@ public class ExplorerJsonTest {
                 "          \"Location\": {\n" +
                 "            \"country\": \"Germany\",\n" +
                 "            \"locality\": \"Hockenheim\",\n" +
-                "            \"lat\": \"49.3278\",\n" +
+                "            \"lat\": \"49\",\n" +
                 "            \"long\": \"8.56583\"\n" +
                 "          }\n" +
                 "        },\n" +
@@ -105,7 +105,7 @@ public class ExplorerJsonTest {
                 "          \"Location\": {\n" +
                 "            \"country\": \"Brazil\",\n" +
                 "            \"locality\": \"São Paulo\",\n" +
-                "            \"lat\": \"-23.7036\",\n" +
+                "            \"lat\": \"23\",\n" +
                 "            \"long\": \"-46.6997\"\n" +
                 "          }\n" +
                 "        },\n" +
@@ -127,7 +127,7 @@ public class ExplorerJsonTest {
                 "          \"Location\": {\n" +
                 "            \"country\": \"Monaco\",\n" +
                 "            \"locality\": \"Monte-Carlo\",\n" +
-                "            \"lat\": \"43.7347\",\n" +
+                "            \"lat\": \"43\",\n" +
                 "            \"long\": \"7.42056\"\n" +
                 "          }\n" +
                 "        },\n" +
@@ -138,7 +138,7 @@ public class ExplorerJsonTest {
                 "          \"Location\": {\n" +
                 "            \"country\": \"Italy\",\n" +
                 "            \"locality\": \"Monza\",\n" +
-                "            \"lat\": \"45.6156\",\n" +
+                "            \"lat\": \"45\",\n" +
                 "            \"long\": \"9.28111\"\n" +
                 "          }\n" +
                 "        },\n" +
@@ -149,7 +149,7 @@ public class ExplorerJsonTest {
                 "          \"Location\": {\n" +
                 "            \"country\": \"Austria\",\n" +
                 "            \"locality\": \"Spielburg\",\n" +
-                "            \"lat\": \"47.2197\",\n" +
+                "            \"lat\": \"47\",\n" +
                 "            \"long\": \"14.7647\"\n" +
                 "          }\n" +
                 "        },\n" +
@@ -171,7 +171,7 @@ public class ExplorerJsonTest {
                 "          \"Location\": {\n" +
                 "            \"country\": \"Mexico\",\n" +
                 "            \"locality\": \"Mexico City\",\n" +
-                "            \"lat\": \"19.4042\",\n" +
+                "            \"lat\": \"19\",\n" +
                 "            \"long\": \"-99.0907\"\n" +
                 "          }\n" +
                 "        },\n" +
@@ -182,7 +182,7 @@ public class ExplorerJsonTest {
                 "          \"Location\": {\n" +
                 "            \"country\": \"China\",\n" +
                 "            \"locality\": \"Shanghai\",\n" +
-                "            \"lat\": \"31.3389\",\n" +
+                "            \"lat\": \"31\",\n" +
                 "            \"long\": \"121.22\"\n" +
                 "          }\n" +
                 "        },\n" +
@@ -193,7 +193,7 @@ public class ExplorerJsonTest {
                 "          \"Location\": {\n" +
                 "            \"country\": \"UK\",\n" +
                 "            \"locality\": \"Silverstone\",\n" +
-                "            \"lat\": \"52.0786\",\n" +
+                "            \"lat\": \"52\",\n" +
                 "            \"long\": \"-1.01694\"\n" +
                 "          }\n" +
                 "        },\n" +
@@ -204,7 +204,7 @@ public class ExplorerJsonTest {
                 "          \"Location\": {\n" +
                 "            \"country\": \"Russia\",\n" +
                 "            \"locality\": \"Sochi\",\n" +
-                "            \"lat\": \"43.4057\",\n" +
+                "            \"lat\": \"43\",\n" +
                 "            \"long\": \"39.9578\"\n" +
                 "          }\n" +
                 "        },\n" +
@@ -215,7 +215,7 @@ public class ExplorerJsonTest {
                 "          \"Location\": {\n" +
                 "            \"country\": \"Belgium\",\n" +
                 "            \"locality\": \"Spa\",\n" +
-                "            \"lat\": \"50.4372\",\n" +
+                "            \"lat\": \"50\",\n" +
                 "            \"long\": \"5.97139\"\n" +
                 "          }\n" +
                 "        },\n" +
@@ -226,7 +226,7 @@ public class ExplorerJsonTest {
                 "          \"Location\": {\n" +
                 "            \"country\": \"Japan\",\n" +
                 "            \"locality\": \"Suzuka\",\n" +
-                "            \"lat\": \"34.8431\",\n" +
+                "            \"lat\": \"34\",\n" +
                 "            \"long\": \"136.541\"\n" +
                 "          }\n" +
                 "        },\n" +
@@ -237,7 +237,7 @@ public class ExplorerJsonTest {
                 "          \"Location\": {\n" +
                 "            \"country\": \"Canada\",\n" +
                 "            \"locality\": \"Montreal\",\n" +
-                "            \"lat\": \"45.5\",\n" +
+                "            \"lat\": \"45\",\n" +
                 "            \"long\": \"-73.5228\"\n" +
                 "          }\n" +
                 "        },\n" +
@@ -248,7 +248,7 @@ public class ExplorerJsonTest {
                 "          \"Location\": {\n" +
                 "            \"country\": \"UAE\",\n" +
                 "            \"locality\": \"Abu Dhabi\",\n" +
-                "            \"lat\": \"24.4672\",\n" +
+                "            \"lat\": \"24\",\n" +
                 "            \"long\": \"54.6031\"\n" +
                 "          }\n" +
                 "        }\n" +

@@ -1,4 +1,4 @@
-package co.uk.test.steps;
+package F1Race;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;

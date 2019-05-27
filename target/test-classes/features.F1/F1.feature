@@ -1,6 +1,6 @@
 Feature:F1 race
 
-
+@F1race
   Scenario: Number of circuits in 2018
     Given Get to the home page of 2018 circuit
     And I check the number of circuits is 21
